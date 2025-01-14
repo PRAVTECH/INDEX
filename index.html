@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRAVTECH</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .video-link {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .video-link a {
+      font-size: 1.2rem;
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #f4f4f9;
+      padding: 10px 15px;
+      border: 2px solid #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .video-link a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .search-bar input[type="text"] {
+      width: 80%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+    .search-bar button {
+      padding: 0.8rem;
+      font-size: 1rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #45a049;
+    }
+    .content {
+      text-align: center;
+    }
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .content p {
+      font-size: 1rem;
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .result {
+      margin-top: 1.5rem;
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      display: none;
+    }
+    .result a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+  <script>
+    function searchFunction() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultBox = document.getElementById("result");
+      resultBox.style.display = "none"; // Hide previous results
+
+      if (query === "hajime no ippo") {
+        resultBox.innerHTML = `
+          <h2>Hajime no Ippo</h2>
+          <p>
+            <a href="https://adrinolinks.in/py8nl" target="_blank">
+              Go to Hajime no Ippo
+            </a>
+          </p>
+        `;
+        resultBox.style.display = "block";
+      } else if (query === "totally reliable") {
+        resultBox.innerHTML = `
+          <h2>Totally Reliable</h2>
+          <p>
+            <a href="https://adrinolinks.in/zdotD" target="_blank">
+              Go to Totally Reliable
+            </a>
+          </p>
+        `;
+        resultBox.style.display = "block";
+      } else if (query === "offroad league online") {
+        resultBox.innerHTML = `
+          <h2>Offroad League Online</h2>
+          <p>
+            <a href="https://adrinolinks.in/VpQrO" target="_blank">
+              Go to Offroad League Online
+            </a>
+          </p>
+        `;
+        resultBox.style.display = "block";
+      } else {
+        alert("No results found for: " + query);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>PRAVTECH</h1>
+    <p>Your hub for game links and updates</p>
+  </header>
+  <div class="container">
+    <!-- Download Tutorial Video Link -->
+    <div class="video-link">
+      <a href="https://youtube.com/shorts/2MV0drv7FyY?si=nZjsxsKV02szBZpT" target="_blank">
+        Download Tutorial Video
+      </a>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for games..." />
+      <button onclick="searchFunction()">Search</button>
+    </div>
+    <!-- Search Results -->
+    <div id="result" class="result"></div>
+    <!-- Hajime no Ippo -->
+    <div class="video-link">
+      <a href="https://adrinolinks.in/py8nl" target="_blank">
+        Go to Hajime no Ippo
+      </a>
+    </div>
+    <!-- Totally Reliable -->
+    <div class="video-link">
+      <a href="https://adrinolinks.in/zdotD" target="_blank">
+        Go to Totally Reliable
+      </a>
+    </div>
+    <!-- Offroad League Online -->
+    <div class="video-link">
+      <a href="https://adrinolinks.in/VpQrO" target="_blank">
+        Go to Offroad League Online
+      </a>
+    </div>
+    <div class="content">
+      <h2>Welcome to PRAVTECH!</h2>
+      <p>We will soon upload exciting game links for you to explore. Stay tuned!</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 PRAVTECH. All rights reserved.
+  </footer>
+</body>
+</html>
+         
